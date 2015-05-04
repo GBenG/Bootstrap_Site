@@ -1,73 +1,134 @@
 <!doctype html>
 <html>
 <head>
-    <title>SPS :: Bootstrap test site</title>
+    <title>Test Bootstrap Site</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" href="manual.css" >
     <script src="js/respond.min.js"></script>	
+<!--<style>
+		body {
+			padding: 0 16px;
+		}
+		.container {
+		  padding: 0 1em;
+		}
+		
+		h4 {
+		  margin-top: 1.5em;
+		}
+		.row {
+		  margin-bottom: 1.5em;
+		  background-color: rgba(195,255,113,.3);
+		  border: 1px solid rgba(195,255,113,.4);
+		}
+		.row .row {
+		  margin-top: 0.8em;
+		  margin-bottom: 0;
+		}
+		[class*="col-"] {
+		  padding: 1em 0;
+		  background-color: rgba(255,195,13,.3);
+		  border: 1px solid rgba(255,195,13,.4);
+}
+	</style>	-->
 </head>
  
 <body>
-
+<div class="container">
 <!-- ///////////////////////////////////////// Header ///////////////////////////////////////// -->
-
- <div class="row">
- 
-	<nav class="navbar navbar-default navbar-inverse"  style="background:#069;">
-  <div class="container-fluid">
-    <!-- Группировка для мобильных экранов -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">МЕНЮ</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-	  
-      <a class="navbar-brand hidden-xs hidden-sm" href="#">
-	  <span class="glyphicon glyphicon-cog"></span> ОТЗЫВЧИВЫЕ МИКРОКОНТРОЛЛЕРЫ</a>
-	  
-	  <a class="navbar-brand visible-xs visible-sm" href="#" style="background:#069; padding:5px;">
-	  <span class="glyphicon glyphicon-cog"></span> ОТЗЫВЧИВЫЕ <br> МИКРОКОНТРОЛЛЕРЫ</a>
-	  
-    </div>
-    <!-- Пункты меню -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> ГЛАВНАЯ</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-duplicate"></span> СТАТЬИ</a></li>
-		<li><a href="#"><span class="glyphicon glyphicon-new-window"></span> РАЗРАБОТКА</a></li>
-		<li><a href="#"><span class="glyphicon glyphicon-map-marker"></span> КОНТАКТЫ</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
- </div>
+	<div class="row header thumbnail">
+		<div class="col-sm-2 hidden-xs">
+			<img src="img/Ram Drive.png" class="img-responsive pull-right">
+		</div>
+        <div class="col-sm-10 col-xs-9">
+			
+				<h1 style="color:#FFF" class="text-center  hidden-xs">ОТЗЫВЧИВЫЕ МИКРОКОНТРОЛЛЕРЫ</h1>
+				<h4 style="color:#FFF" class="text-center  visible-xs">ОТЗЫВЧИВЫЕ МИКРОКОНТРОЛЛЕРЫ</h4>
+			
+     <!--MENU--> 
+	 <div class="col-sm-12 hidden-xs">
+    	<div class="btn-group btn-group-justified" role="group" aria-label="...">
+  			
+            <div class="btn-group" role="group">
+            	<button type="button" class="btn btn-default">
+            	<span class="glyphicon glyphicon-home"></span> ГЛАВНАЯ</button>
+            </div>
+            
+            <div class="btn-group" role="group">
+  				<button type="button" class="btn btn-default">
+            	<span class="glyphicon glyphicon-duplicate"></span> СТАТЬИ</button>
+            </div>
+            
+            <div class="btn-group" role="group">
+  				<button type="button" class="btn btn-default">
+            	<span class="glyphicon glyphicon-new-window"></span> РАЗРАБОТКА</button>
+            </div>
+            
+            <div class="btn-group" role="group">
+            	<button type="button" class="btn btn-default">
+            	<span class="glyphicon glyphicon-map-marker"></span> КОНТАКТЫ</button>
+            </div>
+            
+		</div>
+     </div>     
+            
+		</div>
+        
+        <div class="col-xs-3 visible-xs" style="padding-top:0.8em;">
+        	<div class="dropdown">
+  			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+            <a href="#"><span class="glyphicon glyphicon-menu-hamburger smenu"></span></a>
+            </button>
+  <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu1">
+  
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+    <span class="glyphicon glyphicon-home"></span> ГЛАВНАЯ</a></li>
+    <li role="presentation" class="divider"></li>
+    
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+    <span class="glyphicon glyphicon-duplicate"></span> СТАТЬИ</a></li>
+    <li role="presentation" class="divider"></li>
+    
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+    <span class="glyphicon glyphicon-new-window"></span> РАЗРАБОТКА</a></li>
+    <li role="presentation" class="divider"></li>
+    
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+    <span class="glyphicon glyphicon-map-marker"></span> КОНТАКТЫ</a></li>
+    
+  </ul>
+</div>   
+    
+		</div>
+	</div>
+ </div> 
  
 <!-- ///////////////////////////////////////// CONTENT ///////////////////////////////////////// --> 
-
 <div class="container">
 <div class="row">
 
-<!-- style="border:#999 1px solid;" -->
-
-	<div class="col-sm-9" style="padding:20px;">
-			<h2>Краткий обзор осциллографа Siglent SDS 1072CML<br>
-			<small>Инструмент 28 Сентябрь 2014 DI HALT	18 Comments</small></h2>
+	<div class="col-sm-9">
+    	<h2>Краткий обзор осциллографа Siglent SDS 1072CML<br>
+    	<small>Инструмент 28 Сентябрь 2014 DI HALT	18 Comments</small></h2>
     	
-<p>Прикупили мы тут для себя в Toolboom осциллограф Siglent SDS 1072CML. О своих впечатлениях от девайса я сейчас и поведаю. </p> 
-<img src="img/DSC03320.JPG" width="250px" class="pull-right img-responsive">
+        <p>Прикупили мы тут для себя в Toolboom осциллограф Siglent SDS 1072CML. О своих впечатлениях от девайса я сейчас и поведаю. </p>
+ 
+ <img src="img/DSC03320.JPG" width="250px" class="pull-right img-responsive">
+ 
 <p>Итак, Siglent SDS 1072CML — это малобюджетный осциллограф начального уровня. Про аналогово-измерительную часть тут особо говорить нечего. У всех подобных осциллографов она из одной бочки и отличается друг от друга чуть больше чем никак. В частности это практически полный клон младших моделей LeCroy и брат близнец ATTEN и АКИП. Многочисленные разборки разных осциллографов это подтверждают, у меня тут даже ролик публиковался про это. </p>
+
 <p>Да и для ремонтника/радиолюбителя это не столь важно, т.к. в этом случае осциллограф в 99.9% используется как показометр, с целью посмотреть что вообще происходит и космическая точность там не требуется. А вот интерфейс, функции и удобство пользования стоит во главе угла. Поскольку мой основной осциллограф это старичок Rigol DS1042CD (все это также справедливо и к другим Rigol тысячной серии, например 1052E), то все буду сравнивать с ним. </p>
+
 <p>Для общего впечатления, можно посмотрет обзор от Toolboom</p>
+
 <h3>Внешний вид</h3>
 <p>Сразу бросается в глаза большой экран. Он ощутимо шире экрана Rigol. Если у Rigol ширина экрана 11.5см, то тут все 15см, что позволяет вписать куда более широкую осциллограмму, за больший период времени. Целых 18 делений по ширине! Это очень круто, особенно когда разглядываешь всякие последовательности сигналов при отладке. </p>
-<p>Следующее важное отличие — это по индивидуальной крутилке на каждый канал. В отличии от Rigol, где крутилка одна, а нужный канал выбирается предварительно кнопкой. Вы бы знали как это бесит! Тут же все по уму, у каждого канала свой манипулятор.</p>
-<p>Еще одна важная в интерфейсе вещь это кнопка Single, которой нет у Rigol. Эта кнопка отвечает за одиночный запуск триггера. Напомню, что триггер в осциллографе может работать в разном режиме:</p>
 
+<p>Следующее важное отличие — это по индивидуальной крутилке на каждый канал. В отличии от Rigol, где крутилка одна, а нужный канал выбирается предварительно кнопкой. Вы бы знали как это бесит! Тут же все по уму, у каждого канала свой манипулятор.</p>
+
+<p>Еще одна важная в интерфейсе вещь это кнопка Single, которой нет у Rigol. Эта кнопка отвечает за одиночный запуск триггера. Напомню, что триггер в осциллографе может работать в разном режиме:</p>
 <dl class="dl-horizontal">
 <dt>Нормальный</dt>
 <dd>когда осциллограф обновляет картинку на экране при появлении условия срабатывания.</dd>
@@ -76,13 +137,19 @@
 </dl>
 
 <p>Так вот, очень часто, когда нужно поймать какое то конкретное событие пригождается одиночный режим, но при этом часто хочется видеть и картину общую. В результате постоянно переключаешься из одночного в Авто/Нормальный и обратно. В Rigol для этого надо лезть в меню и занимает это несколько нажатий (или яростно дрочить кнопки Run/Force, чтобы посмотреть что там идет фоном после сработки). А тут для этого есть отдельная кнопка, которая при нажатии переводит в Одиночный режим и возвращает как было при отжатии. ОЧЕНЬ удобно.</p>
+
 <p>Но, несмотря на это, габариты не сильно возросли. Его щщи шире Ригола на каких-то полтора сантиметра и равна около 32см. Глубина его 12.5см, если не брать в расчет возможное подлючение COM или USB, а высота, с выставленными ножками 17.5см. А так все весьма прилично и качественно. Приятно крутится, не болтается, на ощупь радует.</p>
+
 <!--<h3>Комплектация</h3>
 <p>Разумеется в комплекте шло два щупа. Какой то NoName немаркированный. Написано только на них было PB470 и все. Провод мяконький, конструкция на вид хлипкая какая-то. Но это субъективно, эксплуатация покажет. К ним в комплекте стандартная бня в виде колечек цветных, отверточки изолированной и всяких цеплялок. Как у всех. Сетевой провод, самый обыкновенный и USB типа А-B, еще был инструкция на китайском и диск с софтом.Чтобы вам не искать, вот вам цифровая версия инструкции на русском. Она правда от ATTEN, но это не имеет ни малейшего значения ;).</p>
+ 
 <h3>Интерфейс</h3>
 <p>Включим же девайс! И тут он сразу же обрадует нас опцией выбора языка. Русский есть, но засада в том, что он почему то не запоминает выбор и при следующем включении требует выбрать снова. Это бесит. А еще сразу же обратила внимание на себя рукоятка выбора опций. </p>
+
 <p>Обычно ее вращением выбираешь пункт, а ее нажатием подтверждаешь. Но вот засада — она очень чувствительная и при нажатии на нее слегка смещается и в 7 из 10 случаев ты выбираешь не тот пункт который хотел, а соседний. Особенно весело постоянно выбирать вместо русского языка какой-нибудь испанский или итальянский.  </p>
+
 <p>Повращав рукоятки я обнаружил заметный лаг в управлении. И чем ниже разрешение по времени тем сильней. На каких-нибудь 50s/div лаг начинает достигать 5-7 секунд.</p>
+
 <p>Похоже интерфейс у Сиглента привязан к обновлению экрана. И пока он думает и рисует, то на вращение рукояток реагирует ну очень медленно. Можно поменять разрешение по времени или напряжению, а он среагирует на изменения спустя несколько секунд только. То есть тормоза интерфейса становятся просто зверскими и зависимыми от разрешения по времени. У Rigol такой лажи нет, интерфейс там работает отлично и без каких-либо нареканий. </p>-->
 
 <nav>
@@ -91,8 +158,9 @@
     <li class="next"><a href="#">Вперед <span aria-hidden="true">&rarr;</span></a></li>
   </ul>
 </nav>
-		</div>
 
+    </div>
+    
     <div class="col-sm-3">
     	<div class="panel panel-default">
   			<div class="panel-heading">Сайту один год</div>
@@ -106,20 +174,8 @@
     </div>
 </div>
 </div>
-
-<div class="well">Created by <strong>SPS</strong> <span class="glyphicon glyphicon-copyright-mark"></span></div>
-
 <!-- ///////////////////////////////////////// JS код ///////////////////////////////////////// -->
-
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
-
-<!-- Bootstrap на русском! -->
-<!-- http://bootstrap-3.ru/css.php -->
-<!-- http://bootstrap-3.ru/components.php -->
-
-<!-- И оригинал -->
-<!-- http://getbootstrap.com/css/ -->
-<!-- http://getbootstrap.com/components/ -->
